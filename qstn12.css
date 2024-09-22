@@ -1,0 +1,21 @@
+table,tr,th,td
+{
+border: 2px solid black;
+border-collapse: collapse;
+}
+table
+{
+    margin: 10%;
+    width: 50%;
+}
+tr,th
+{
+    color: blue;
+    background-color: grey;
+}
+td
+{
+    color: black;
+    background-color: rgb(62, 210, 62);
+    
+}

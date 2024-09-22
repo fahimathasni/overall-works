@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,tr,th,td
+        {
+            border: 2px solid black;
+            border-collapse: collapse;
+        
+        }
+        table
+        {
+            background-color: greenyellow;
+
+        }
+        </style>
+</head>
+<body>
+    <table>
+    <form action="" method=""></form>
+    <tr>
+        <td>Firstname </td> 
+        <td><input type="text" required> </td>
+    </tr>
+        <tr>
+        <td>Lastname </td> 
+        <td><input type="text" required></td>
+        </tr>
+
+        <tr>
+        <td>Photo </td>
+         <td><input type="file"></td>
+        </tr>
+
+        <tr>
+            <td>DOB </td>
+            <td><input type="date" required></td>
+        </tr>
+
+        <tr>
+            <td>Email</td>
+            <td><input type="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"></td>
+        </tr>
+
+        <tr>
+            <td>Mobile number</td>
+            <td><input type="number" required pattern="^[0-9]{10}$"></td>
+        </tr>
+
+        <tr>
+            <td>Gender</td>
+            <td><input type="radio" name="gender">male <input type="radio" name="gender">femail</td>
+        </tr>
+        <tr>
+            <td>Adress</td>
+            <td> <input type="text"></td>
+        </tr>
+
+        <tr>
+            <td>City</td>
+            <td><input type="text"></td>
+        </tr>
+
+        <tr>
+            <td>Pincode </td>
+            <td><input type="text" minlength="6" maxlength="6"></td>
+        </tr>
+
+        <tr>
+            <td>State </td>
+            <td><input type="text"></td>
+        </tr>
+
+        <tr>
+            <td>Country </td>
+            <td><select name="" id="">
+                <option value="">India</option>
+                <option value="">USA</option>
+                <option value="">UAE</option>
+                <option value="">America</option>
+                <option value="">Pkistan</option>
+            </select> 
+        </td>
+        </tr>
+
+        <tr>
+            <td>Hobbies </td>
+            <td><input type="radio" name="hobbies">singing <input type="radio" name="hobbies">drawing</td>
+        </tr>
+       <tr>
+        <td>qualification</td>
+        <td>
+        <table>
+            <tr>
+                <th>sl no</th>
+                <th>examination</th>
+                <th>board</th>
+                <th>percentage</th>
+                <th>years of passing</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>class 10</td>
+            <td> <input type="text"></td>
+            <td> <input type="text"></td>
+            <td> <input type="text"></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>class 12</td>
+            <td> <input type="text"></td>
+            <td> <input type="text"></td>
+            <td> <input type="text"></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>degree</td>
+            <td> <input type="text"></td>
+            <td> <input type="text"></td>
+            <td> <input type="text"></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>post graduation</td>
+            <td> <input type="text"></td>
+            <td> <input type="text"></td>
+            <td> <input type="text"></td>
+        </tr>
+        </table>
+        </td>
+       </tr>
+        <tr>
+            <td>Courses Applied For</td>
+            <td><input type="radio" name=" course of Applied">BSC <input type="radio" name="course of applied">BCA <input type="radio" name="course of applied">BA</td>
+        </tr>
+        <tr>
+            <td><input type="reset"></td>
+               <td><button>ok</button></td>
+        </tr>
+        
+    </table>
+</body>
+</html>

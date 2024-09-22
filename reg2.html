@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head   >
+<body>
+    <form>
+    Enter Name: <input type="text" id="name_id" required placeholder="Enter name" onkeyup="clearmsg('sp1')">
+    <span id="sp1" style="color: red;"></span><br>
+     Enter Mobile: <input type="text" id="mobile_id" required placeholder="Enter mobile" pattern="[0-9]{10}"  onkeyup="clearmsg('sp2')">
+    <span id="sp2" style="color:red;"></span><br>
+    Enter Address: <input type="text" id="add_id" required placeholder="Enter Address" onkeyup="clearmsg('sp3')">
+    <span id="sp3" style="color:red;"></span><br> 
+    Enter Email: <input type="text" id="user_id" required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="Enter username" onkeyup="clearmsg('sp4')">
+    <span id="sp4" style="color:red;"></span><br> 
+    Enter Password:<input type="text" id="p_id" required placeholder="Enter password" minlength="6" maxlength="6" onkeyup="clearmsg('sp5')">
+    <span id="sp5" style="color:red;"></span><br> 
+    <button onclick="return validate()">submit</button>
+  
+
+  </form>
+</body>
+<script>
+    function validate()
+    {
+        var name=document.getElementById("name_id").value;
+        var mobile=document.getElementById("mobile_id").value;
+        var address=document.getElementById("add_id").value;
+        var uname=document.getElementById("user_id").value;
+        var pwd=document.getElementById("p_id").value;
+    
+    if(name=="")
+    {
+        document.getElementById("sp1").innerHTML="Enter Name *";
+        return false;
+       
+    }
+    if(mobile=="")
+    {
+      
+        document.getElementById("sp2").innerHTML="Enter Mobile *"; 
+         return false;
+    }
+    if(address=="")
+    {
+        document.getElementById("sp3").innerHTML="Enter Address";
+        return false;
+
+    }
+    if(uname=="")
+    {
+        document.getElementById("sp4").innerHTML="Enter Username";
+        return false;
+
+    }
+    if(pwd=="")
+    {
+        document.getElementById("sp5").innerHTML="Enter Password";
+        return false;
+
+    }
+    }
+  function clearmsg(sp)
+  {
+      document.getElementById(sp).innerHTML="";
+
+  }
+</script>
+
+</html>
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+    Enter name: <input type="text" id="name_id"  placeholder="Enter name">
+    <span id="sp1" style="color: red;"></span><br>
+    Enter Mobile: <input type="text" id="Mobile" placeholder="Enter Mobile">
+    <span id="sp2" style="color: red;"></span><br>
+    Enter Address: <input type="text" id="Address_id"  placeholder="Enter Address">
+    <span id="sp3" style="color: red;"></span><br>
+    Enter Email: <input type="text" id="Email_id" placeholder="Enter Email">
+    <span id="sp4" style="color: red;"></span><br>
+    Enter Password: <input type="text" id="P_id" placeholder="Enter Password">
+    <span id="sp5" style="color: red;"></span><br>
+    <button onclick="validate1()">submit</button>
+    </form>
+</body>
+<script>
+    // function validate1()
+    // {
+        
+    //     var name=document.getElementById("Name_id"). value;
+    //     var Mobile=document.getElementById("Mobile_id"). value;
+    //     var Address=document.getElementById("Address_id"). value;
+    //     var Email=document.getElementById("Email_id"). value;
+    //     var Password=document.getElementById("P_id"). value;
+
+    
+    //     if(Name=="")
+    // {
+    //    alert("Name") 
+    //     document.getElementById("sp1").innerHTML="Enter name";
+    //     return false;
+    // }
+    
+    // if(Mobile=="")
+    // {
+        
+    //     document.getElementById("sp2").innerHTML="Enter Mobile";
+    //     return false;
+    // }
+
+    
+    // if(Address=="")
+    // {
+        
+    //     document.getElementById("sp3").innerHTML="Enter Address";
+    //     return false;
+    // }
+
+    
+    // if(Email=="")
+    // {
+        
+    //     document.getElementById("sp4").innerHTML="Enter Email";
+    //     return false;
+    // }
+
+    
+    // if(Password=="")
+    // {
+        
+    //     document.getElementById("sp5").innerHTML="Enter Password";
+    //     return false;
+    // }
+
+    // if(Name == "")
+    // {
+    //     alert("Name") 
+    //     document.getElementById("sp1").innerHTML="Enter name";
+
+    function validate()
+    {
+        var name=document.getElementById("name_id").value;
+        var mobile=document.getElementById("mobile_id").value;
+        var address=document.getElementById("add_id").value;
+        var uname=document.getElementById("user_id").value;
+        var pwd=document.getElementById("p_id").value;
+    
+    if(name=="")
+    {
+        document.getElementById("sp1").innerHTML="Enter Name *";
+        return false;
+       
+    }
+    if(mobile=="")
+    {
+      
+        document.getElementById("sp2").innerHTML="Enter Mobile *";
+        return false;
+    }
+}
+</script>
+</html> --> 

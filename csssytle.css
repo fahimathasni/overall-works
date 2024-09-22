@@ -1,0 +1,18 @@
+div{
+
+   background-color: cornflowerblue; 
+   font-size: 1.0em;
+   width: 100px;
+   float: right;
+   
+   
+
+}
+img{
+    float: right;
+    border-radius: 200px;
+    
+}
+p{
+    width: 200;
+}
